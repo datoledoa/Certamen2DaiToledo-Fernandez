@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio VaioVaio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+</head>
+<body>
+	<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+	  	<button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Leídas &times;</button>
+	</div>
+
+	<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+		<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Por leer &times;</button>
+	</div>
+
+	<div class="w3-teal">
+
+	  	<button id="openLeftMenu" class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+	  	<button id="openRightMenu" class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+	  	<div class="w3-container">
+	  	</div>
+	</div>
+
+	<div id="infoNoticia" class="w3-container w3-center">
+		<article>
+			<h1 id="titulo"></h1>
+			<p><strong id="encabezado"></strong></p>
+			<p id="cuerpo" style="text-align: center; white-space: pre-line"></p>
+		</article>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/opme.js">	</script>
+	<script src="js/menu.js"></script>
+</body>
+</html>
+
